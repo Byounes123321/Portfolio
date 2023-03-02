@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+  --background: #0d1b2a;
+  --darkBlue: #1b263b;
+  --lightBlue: #778da9;
+  --offWhite: #e0e1dd;
+}
+html {
+  background-color: var(--background);
+  font-family: montserrat, OpenSans;
+  font-weight: 600;
+}
+body {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  border: var(--lightBlue) 2px solid;
+}
+/* *{
+    border: red solid 1px;
+} */
+
+/* Header */
+.header {
+  background-color: var(--darkBlue);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 6px 23px -1px #000000;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  align-self: flex-start;
+}
+.logo img {
+  width: 100%;
+  max-height: 100px;
+  align-self: flex-start;
+  border: none;
+}
+
+/* nav*/
+
+.navlinks {
+  list-style: none;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav a {
+  color: var(--offWhite);
+  padding-right: 20px;
+  font-size: 24px; /*breaks under 1000px screen size */
+}
+.nav a:hover {
+  color: var(--lightBlue);
+  transition: 0.5s;
+}
+.nav .btn {
+  margin-right: 20px;
+}
+
+.btn {
+  border: var(--lightBlue) solid 2px;
+  border-radius: 15px;
+  padding: 10px;
+  color: var(--lightBlue);
+}
+.btn:hover {
+  transition: 0.5s;
+  background-color: var(--lightBlue);
+  color: var(--offWhite);
+}
+
+/* MAIN */
+main {
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+h2 {
+  color: var(--lightBlue);
+  font-size: 55px;
+  text-align: center;
+  margin-top: 4em;
+}
+p {
+  color: var(--offWhite);
+  font-size: 24;
+}
+/* Landing page */
+
+.hi {
+  color: var(--lightBlue);
+  font-size: 24;
+  margin-bottom: 0;
+}
+h1 {
+  color: var(--offWhite);
+  font-size: 7em;
+  margin: 0px;
+}
+.landing h2 {
+  text-align: left;
+  margin: 0;
+}
+.landing p {
+  margin-right: 30vw;
+}
+
+/* About me */
+
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.about p {
+  margin-top: 0;
+}
+.about img {
+  width: 50%;
+  height: auto;
+  max-width: 500px;
+}
+
+/* projects */
+
+.projects {
+  display: flex;
+  gap: 25px;
+}
+.projectimg {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.projectSkills img {
+  width: 15%;
+}
+.projectSkills {
+  display: flex;
+  justify-content: space-between;
+}
+h3 {
+  margin: 0;
+  color: var(--offWhite);
+  text-align: center;
+}
+.projects p {
+  text-align: right;
+}
+.projImgs {
+  width: 400%;
+}
+/* The skills images need to stay within the project img */
+
+/* more projects */
+.moreProj h2 {
+  color: var(--offWhite);
+  font-size: 45px;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.gridItem {
+  background-color: var(--lightBlue);
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: none;
+}
+.gridContainer a:hover {
+  box-shadow: 1px 8px 21px 5px #000000;
+  transition: 0.5s;
+}
+.gridContainer a:active {
+  box-shadow: none;
+  transition: 0.2s;
+}
+.gridItem h3 {
+  color: var(--darkBlue);
+}
+svg {
+  height: 25px;
+}
+.showMorebtn {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Education */
+
+.eduItem {
+  display: flex;
+  background-color: var(--darkBlue);
+  gap: 50px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+.eduItem img {
+  width: 25%;
+  border: none;
+}
+
+.eduDesc {
+  margin: 10px;
+  align-self: center;
+}
+.degree {
+  color: var(--offWhite);
+  font-weight: 600;
+}
+.time {
+  color: #121111;
+}
+.schoolDesc {
+  color: var(--offWhite);
+  font-size: small;
+}
+/* skills */
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.skillitem {
+  width: 100%;
+}
+.skillitem img {
+  width: 100%;
+  border: none;
+}
+.progOutline {
+  width: 100%;
+  height: 10px;
+  border: var(--darkBlue) 2px solid;
+  border-radius: 15px;
+}
+.progress {
+  background-color: var(--lightBlue);
+  border-radius: 15px;
+  height: 10px;
+}
+#contact p {
+  text-align: center;
+}
+footer {
+  text-align: center;
+  color: var(--offWhite);
+  font-size: smaller;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
